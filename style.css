@@ -4,7 +4,7 @@ body {
   background-color: #5FC6CF;
   font-family: 'Alef', sans-serif;
   font-size: 20px;
-  color: #E9DCA4; }
+  color: #5FC6CF; }
 
 nav {
   background-color: black;
@@ -13,7 +13,7 @@ nav {
   padding: 20px 3px; }
   nav a {
     text-decoration: none;
-    color: #E9DCA4; }
+    color: #5FC6CF; }
   nav ul {
     display: flex;
     justify-content: flex-end;
