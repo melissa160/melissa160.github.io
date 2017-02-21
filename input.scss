@@ -101,20 +101,12 @@ nav {
 
 	.linea {
 	    padding: 0;
-	    border: solid 3px $main_color;
+	    border: solid 3px $logo_color;
 	    text-align: center;
-	    display: inline-block;
-	    width: 99px;
-	}
-
-	.linea2 {
-		padding: 0;
-		color: white;
-		border: solid 3px white;
-		text-align: center;
 	    display: inline-block;
 	    width: 100px;
 	}
+
 
 	.parrafos ul{
 		margin: 10px;
@@ -123,12 +115,8 @@ nav {
 		display: flex;
 	}
 	.separator{
-		color: $title_color;
+		color: $logo_color;
 	}
-	.separator:nth-child(even) {
-		color: $main_color;
-	}
-
 }
 .lista {
 		

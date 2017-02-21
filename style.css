@@ -74,14 +74,7 @@ nav {
   width: 400px; }
 .seccion .linea {
   padding: 0;
-  border: solid 3px #5FC6CF;
-  text-align: center;
-  display: inline-block;
-  width: 99px; }
-.seccion .linea2 {
-  padding: 0;
-  color: white;
-  border: solid 3px white;
+  border: solid 3px #0698A0;
   text-align: center;
   display: inline-block;
   width: 100px; }
@@ -90,9 +83,7 @@ nav {
 .seccion .parrafos2 {
   display: flex; }
 .seccion .separator {
-  color: white; }
-.seccion .separator:nth-child(even) {
-  color: #5FC6CF; }
+  color: #0698A0; }
 
 .lista {
   flex-direction: column; }
