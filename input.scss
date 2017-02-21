@@ -1,5 +1,6 @@
 $main_color : #5FC6CF;
 $title_color: white;
+$logo_color: #0698A0;
 body {
 	margin: 0; 
 	padding: 0;
@@ -122,10 +123,10 @@ nav {
 		display: flex;
 	}
 	.separator{
-		color: $main_color;
+		color: $title_color;
 	}
 	.separator:nth-child(even) {
-		color: white;
+		color: $main_color;
 	}
 
 }
@@ -178,10 +179,10 @@ nav {
 	}
 
 	a{
-		color: white;
+		color: $logo_color;
 		text-decoration: none;
 		&:visited {
-			color:white;}  
+			color:$logo_color;}  
 		&:hover {
 			color:#999999;
 		} 

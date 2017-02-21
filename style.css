@@ -90,9 +90,9 @@ nav {
 .seccion .parrafos2 {
   display: flex; }
 .seccion .separator {
-  color: #5FC6CF; }
-.seccion .separator:nth-child(even) {
   color: white; }
+.seccion .separator:nth-child(even) {
+  color: #5FC6CF; }
 
 .lista {
   flex-direction: column; }
@@ -132,10 +132,10 @@ nav {
   .contact li {
     list-style: none; }
   .contact a {
-    color: white;
+    color: #0698A0;
     text-decoration: none; }
     .contact a:visited {
-      color: white; }
+      color: #0698A0; }
     .contact a:hover {
       color: #999999; }
   .contact p {
