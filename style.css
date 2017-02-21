@@ -50,7 +50,8 @@ nav {
     padding: 10px; }
   .seccion .skills {
     font-size: 25px;
-    font-weight: 600; }
+    font-weight: 600;
+    padding-bottom: 50px; }
   .seccion .main-tittle {
     /*color: $title_color;*/
     font-size: 45px;
@@ -73,14 +74,14 @@ nav {
   width: 400px; }
 .seccion .linea {
   padding: 0;
-  border: solid 3px white;
+  border: solid 3px #5FC6CF;
   text-align: center;
   display: inline-block;
   width: 99px; }
 .seccion .linea2 {
   padding: 0;
-  color: #5FC6CF;
-  border: solid 3px #5FC6CF;
+  color: white;
+  border: solid 3px white;
   text-align: center;
   display: inline-block;
   width: 100px; }
@@ -88,6 +89,10 @@ nav {
   margin: 10px; }
 .seccion .parrafos2 {
   display: flex; }
+.seccion .separator {
+  color: #5FC6CF; }
+.seccion .separator:nth-child(even) {
+  color: white; }
 
 .lista {
   flex-direction: column; }
@@ -127,10 +132,10 @@ nav {
   .contact li {
     list-style: none; }
   .contact a {
-    color: #5FC6CF;
+    color: white;
     text-decoration: none; }
     .contact a:visited {
-      color: #5FC6CF; }
+      color: white; }
     .contact a:hover {
       color: #999999; }
   .contact p {
@@ -142,7 +147,7 @@ footer p {
   text-align: center;
   display: block;
   width: auto;
-  padding: 0;
+  padding: 0 0 30px 0;
   margin: 0; }
 
 @media screen and (min-width: 900px) {
