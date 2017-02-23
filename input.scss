@@ -1,6 +1,7 @@
 $main_color : #5FC6CF;
 $title_color: white;
 $logo_color: #0698A0;
+
 body {
 	margin: 0; 
 	padding: 0;
@@ -10,6 +11,7 @@ body {
 	color: $main_color;
 }
 
+/*Navegacion*/
 nav {
 	background-color: black;
 	display: flex;
@@ -18,7 +20,7 @@ nav {
 	position: fixed;
 	width: 100%;
 	top: 0;
-    right: 0;
+  right: 0;
 	
 	a {
 		text-decoration: none;
@@ -34,9 +36,7 @@ nav {
 		margin: 10px;
 		padding-right: 20px;
 		list-style: none;
-
 	}
-	
 }
 
 .start {
@@ -45,7 +45,7 @@ nav {
 	padding-left: 50px;
 }
 
-
+/*secciones*/
 .seccion{
 	display: flex;
 	align-items: center;
@@ -55,91 +55,71 @@ nav {
 	background-color: $main_color;
 	color: $title_color;
 	margin-bottom: 35px;
-
 	#my-pic{
 		border-radius: 50%;
 		margin-top: 120px;
 	}
-
 	i {
 		font-size: 35px;
 		padding: 10px;
 	}
-
 	.skills{
 		font-size: 25px;
 		font-weight: 600;
-		padding-bottom: 50px; 
-
+		padding-bottom: 50px;
+		text-align: center;
 	}
-
 	.main-tittle {
-		/*color: $title_color;*/
 		font-size: 45px;
 		font-weight: 600;
 		font-family: 'Nunito', sans-serif;
 		padding-top: 60px;
 	}
+}
 
-}
 .seccion:first-child{
-		margin-top: 120px;
+	margin-top: 120px;
 }
-/*secciones*/
 .seccion:nth-child(even) {
-			background-color: $title_color;
-			color: $main_color;
-		}
+	background-color: $title_color;
+	color: $main_color;
+}
 .seccion {
 	p{
-			margin:10px;
-			/*padding: 10px;*/
-			text-align: justify;
-			width: 400px;	
+		margin:10px;
+		/*padding: 10px;*/
+		text-align: justify;	
 		}
-
-
 	.linea {
-	    padding: 0;
-	    border: solid 3px $logo_color;
-	    text-align: center;
-	    display: inline-block;
-	    width: 100px;
+    padding: 0;
+    border: solid 3px $logo_color;
+    text-align: center;
+    display: inline-block;
+    width: 100px;
 	}
-
-
+	.parrafos {
+		padding: 10px;
+		max-width:600px;
+	}
 	.parrafos ul{
 		margin: 10px;
 	}
-	.parrafos2{
-		display: flex;
-	}
+
 	.separator{
 		color: $logo_color;
 	}
 }
-.lista {
-		
+.lista {	
 	flex-direction: column;
 }
 
-/*tabla*/
+/*tabla portafolio*/
 .tabla {
-	display: flex;
-	flex-wrap:wrap;
-
-	.colum {
-		display: flex;
-		border: 1px solid white;
-		width: auto;
-		flex-direction: column;
-		justify-content: center;
-		text-align: center;
-		margin:8px;
-		color: $title_color;
-		padding: 5px;
-	}
-	a{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: $logo_color;
+	a {
 		text-decoration: none;
 		&:visited {
 			color:white;}  
@@ -147,15 +127,29 @@ nav {
 			color:#999999;
 		} 
 	}
+	.img-port{	
+		max-width: 350px;
+		height: 300px;
+	}
+}
+.colum {
+	display: flex;
+	justify-content: center;
+	flex-direction:column;
+	align-items:center;
+	border: 1px solid $logo_color;
+	padding: 5px;
+	margin: 5px;
+	align-items: center;
 }
 
+/*Contacto*/
 .contact{	
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 	margin-top: 50px;
-	
 	ul{
 		display: flex;
 		justify-content: center;
@@ -165,7 +159,6 @@ nav {
 	li{
 		list-style: none;
 	}
-
 	a{
 		color: $logo_color;
 		text-decoration: none;
@@ -180,6 +173,7 @@ nav {
 		text-align: center;
 	}
 }
+
 footer{
 	p{
 		color: white;
@@ -187,18 +181,25 @@ footer{
 		display: block;
 		width: auto;
 		padding: 0 0 30px 0;
-
 		margin:0;	
 	}
-	
 }
-@media screen and (min-width: 900px) {
- 	.parrafos{
- 		display: flex;
- 		justify-content: center;
- 		
- 	}
- 	p{
- 		
- 	}
-  }
+
+/*Dispositivos mobiles*/
+@media screen and (max-device-width: 500px){
+	
+	nav{
+		ul  {
+			-webkit-padding-start: 0;
+		}
+		li {
+			padding-right: 10px;
+		}	
+	}
+	.start {
+		display: none;
+		justify-content: flex-start;
+		padding-left: 10px;
+	}
+}
+

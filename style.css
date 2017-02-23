@@ -6,6 +6,7 @@ body {
   font-size: 20px;
   color: #5FC6CF; }
 
+/*Navegacion*/
 nav {
   background-color: black;
   display: flex;
@@ -33,6 +34,7 @@ nav {
   justify-content: flex-start;
   padding-left: 50px; }
 
+/*secciones*/
 .seccion {
   display: flex;
   align-items: center;
@@ -51,9 +53,9 @@ nav {
   .seccion .skills {
     font-size: 25px;
     font-weight: 600;
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    text-align: center; }
   .seccion .main-tittle {
-    /*color: $title_color;*/
     font-size: 45px;
     font-weight: 600;
     font-family: 'Nunito', sans-serif;
@@ -62,7 +64,6 @@ nav {
 .seccion:first-child {
   margin-top: 120px; }
 
-/*secciones*/
 .seccion:nth-child(even) {
   background-color: white;
   color: #5FC6CF; }
@@ -70,45 +71,51 @@ nav {
 .seccion p {
   margin: 10px;
   /*padding: 10px;*/
-  text-align: justify;
-  width: 400px; }
+  text-align: justify; }
 .seccion .linea {
   padding: 0;
   border: solid 3px #0698A0;
   text-align: center;
   display: inline-block;
   width: 100px; }
+.seccion .parrafos {
+  padding: 10px;
+  max-width: 600px; }
 .seccion .parrafos ul {
   margin: 10px; }
-.seccion .parrafos2 {
-  display: flex; }
 .seccion .separator {
   color: #0698A0; }
 
 .lista {
   flex-direction: column; }
 
-/*tabla*/
+/*tabla portafolio*/
 .tabla {
   display: flex;
-  flex-wrap: wrap; }
-  .tabla .colum {
-    display: flex;
-    border: 1px solid white;
-    width: auto;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 8px;
-    color: white;
-    padding: 5px; }
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #0698A0; }
   .tabla a {
     text-decoration: none; }
     .tabla a:visited {
       color: white; }
     .tabla a:hover {
       color: #999999; }
+  .tabla .img-port {
+    max-width: 350px;
+    height: 300px; }
 
+.colum {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #0698A0;
+  padding: 5px;
+  margin: 5px;
+  align-items: center; }
+
+/*Contacto*/
 .contact {
   display: flex;
   justify-content: center;
@@ -141,9 +148,16 @@ footer p {
   padding: 0 0 30px 0;
   margin: 0; }
 
-@media screen and (min-width: 900px) {
-  .parrafos {
-    display: flex;
-    justify-content: center; } }
+/*Dispositivos mobiles*/
+@media screen and (max-device-width: 500px) {
+  nav ul {
+    -webkit-padding-start: 0; }
+  nav li {
+    padding-right: 10px; }
+
+  .start {
+    display: none;
+    justify-content: flex-start;
+    padding-left: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
