@@ -174,14 +174,21 @@ nav {
 	}
 }
 
+form {
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+}
 
 form input, textarea{
-	display: block;
+	// display: flex;
+	// flex-direction:column;
 	margin: 5px;
 	padding: 5px;
 	border: 1px solid $logo_color;
-	width:300px;
+	width:500px;
 	border-radius: 5px;
+
 }
 
 form button{
@@ -193,6 +200,9 @@ form button{
 	border:1px solid $logo_color;
 	cursor: pointer; 
 	border-radius: 5px;
+	width:130px;
+	margin:0 auto;
+	margin-top:5px;
 }
 footer{
 	p{
@@ -221,5 +231,10 @@ footer{
 		justify-content: flex-start;
 		padding-left: 10px;
 	}
+	form input, textarea, button{
+	width:250px;
+	box-sizing: border-box
+
+}
 }
 

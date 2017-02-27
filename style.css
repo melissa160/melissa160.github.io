@@ -140,12 +140,16 @@ nav {
     padding: 0;
     text-align: center; }
 
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 form input, textarea {
-  display: block;
   margin: 5px;
   padding: 5px;
   border: 1px solid #0698A0;
-  width: 400px;
+  width: 500px;
   border-radius: 5px; }
 
 form button {
@@ -156,7 +160,10 @@ form button {
   font-size: 18px;
   border: 1px solid #0698A0;
   cursor: pointer;
-  border-radius: 5px; }
+  border-radius: 5px;
+  width: 130px;
+  margin: 0 auto;
+  margin-top: 5px; }
 
 footer p {
   color: white;
@@ -176,6 +183,10 @@ footer p {
   .start {
     display: none;
     justify-content: flex-start;
-    padding-left: 10px; } }
+    padding-left: 10px; }
+
+  form input, textarea, button {
+    width: 250px;
+    box-sizing: border-box; } }
 
 /*# sourceMappingURL=style.css.map */
