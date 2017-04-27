@@ -98,7 +98,7 @@ nav {
   .tabla a {
     text-decoration: none; }
     .tabla a:visited {
-      color: white; }
+      color: #999999; }
     .tabla a:hover {
       color: #999999; }
   .tabla .img-port {
@@ -114,6 +114,12 @@ nav {
   padding: 5px;
   margin: 5px;
   align-items: center; }
+  .colum a {
+    cursor: pointer; }
+    .colum a:visited {
+      color: #999999; }
+    .colum a:hover {
+      color: #999999; }
 
 /*Contacto*/
 .contact {

@@ -3,237 +3,245 @@ $title_color: white;
 $logo_color: #0698A0;
 
 body {
-	margin: 0; 
-	padding: 0;
-	background-color: #5FC6CF;
-	font-family: 'Alef', sans-serif;
-	font-size: 20px;
-	color: $main_color;
+  margin: 0; 
+  padding: 0;
+  background-color: #5FC6CF;
+  font-family: 'Alef', sans-serif;
+  font-size: 20px;
+  color: $main_color;
 }
 
 /*Navegacion*/
 nav {
-	background-color: black;
-	display: flex;
-	justify-content: space-between;
-	padding: 10px 3px;
-	position: fixed;
-	width: 100%;
-	top: 0;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 3px;
+  position: fixed;
+  width: 100%;
+  top: 0;
   right: 0;
-	
-	a {
-		text-decoration: none;
-		color: $main_color;
-	}
-	ul  {
-		display: flex;
-		justify-content: flex-end;
-		margin: 0; 
-		padding-right: 60px;
-	}
-	li {
-		margin: 10px;
-		padding-right: 20px;
-		list-style: none;
-	}
+  
+  a {
+    text-decoration: none;
+    color: $main_color;
+  }
+  ul  {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0; 
+    padding-right: 60px;
+  }
+  li {
+    margin: 10px;
+    padding-right: 20px;
+    list-style: none;
+  }
 }
 
 .start {
-	display: flex;
-	justify-content: flex-start;
-	padding-left: 50px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 50px;
 }
 
 /*secciones*/
 .seccion{
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
-	font-family: 'Nunito', sans-serif;
-	background-color: $main_color;
-	color: $title_color;
-	margin-bottom: 35px;
-	#my-pic{
-		border-radius: 50%;
-		margin-top: 120px;
-	}
-	i {
-		font-size: 35px;
-		padding: 10px;
-	}
-	.skills{
-		font-size: 25px;
-		font-weight: 600;
-		padding-bottom: 50px;
-		text-align: center;
-	}
-	.main-tittle {
-		font-size: 45px;
-		font-weight: 600;
-		font-family: 'Nunito', sans-serif;
-		padding-top: 60px;
-	}
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Nunito', sans-serif;
+  background-color: $main_color;
+  color: $title_color;
+  margin-bottom: 35px;
+  #my-pic{
+    border-radius: 50%;
+    margin-top: 120px;
+  }
+  i {
+    font-size: 35px;
+    padding: 10px;
+  }
+  .skills{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .main-tittle {
+    font-size: 45px;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 60px;
+  }
 }
 
 .seccion:first-child{
-	margin-top: 120px;
+  margin-top: 120px;
 }
 .seccion:nth-child(even) {
-	background-color: $title_color;
-	color: $main_color;
+  background-color: $title_color;
+  color: $main_color;
 }
 .seccion {
-	p{
-		margin:10px;
-		/*padding: 10px;*/
-		text-align: justify;	
-		}
-	.linea {
+  p{
+    margin:10px;
+    /*padding: 10px;*/
+    text-align: justify;  
+    }
+  .linea {
     padding: 0;
     border: solid 3px $logo_color;
     text-align: center;
     display: inline-block;
     width: 100px;
-	}
-	.parrafos {
-		padding: 10px;
-		max-width:800px;
-	}
-	.parrafos ul{
-		margin: 10px;
-	}
+  }
+  .parrafos {
+    padding: 10px;
+    max-width:800px;
+  }
+  .parrafos ul{
+    margin: 10px;
+  }
 
-	.separator{
-		color: $logo_color;
-	}
+  .separator{
+    color: $logo_color;
+  }
 }
-.lista {	
-	flex-direction: column;
+.lista {  
+  flex-direction: column;
 }
 
 /*tabla portafolio*/
 .tabla {
-	display:flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	color: $logo_color;
-	a {
-		text-decoration: none;
-		&:visited {
-			color:white;}  
-		&:hover {
-			color:#999999;
-		} 
-	}
-	.img-port{	
-		max-width: 350px;
-		height: 300px;
-	}
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: $logo_color;
+  a {
+    text-decoration: none;
+    &:visited {
+      color:#999999;}  
+    &:hover {
+      color:#999999;
+    } 
+  }
+  .img-port{  
+    max-width: 350px;
+    height: 300px;
+  }
 }
 .colum {
-	display: flex;
-	justify-content: center;
-	flex-direction:column;
-	align-items:center;
-	border: 1px solid $logo_color;
-	padding: 5px;
-	margin: 5px;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  align-items:center;
+  border: 1px solid $logo_color;
+  padding: 5px;
+  margin: 5px;
+  align-items: center;
+  a{
+    cursor: pointer;
+    &:visited {
+      color:#999999;}  
+    &:hover {
+      color:#999999;
+    } 
+  }
 }
 
 /*Contacto*/
-.contact{	
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 50px;
-	ul{
-		display: flex;
-		justify-content: center;
-		padding: 0;
-		margin-bottom: 50px;
-	}
-	li{
-		list-style: none;
-	}
-	a{
-		color: $logo_color;
-		text-decoration: none;
-		&:visited {
-			color:$logo_color;}  
-		&:hover {
-			color:#999999;
-		} 
-	}
-	p{
-		padding: 0;
-		text-align: center;
-	}
+.contact{ 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    color: $logo_color;
+    text-decoration: none;
+    &:visited {
+      color:$logo_color;}  
+    &:hover {
+      color:#999999;
+    } 
+  }
+  p{
+    padding: 0;
+    text-align: center;
+  }
 }
 
 form {
-	display: flex;
-	flex-direction:column;
-	justify-content:center;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
 }
 
 form input, textarea{
-	// display: flex;
-	// flex-direction:column;
-	margin: 5px;
-	padding: 5px;
-	border: 1px solid $logo_color;
-	width:500px;
-	border-radius: 5px;
+  // display: flex;
+  // flex-direction:column;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid $logo_color;
+  width:500px;
+  border-radius: 5px;
 
 }
 
 form button{
-	margin: 5px;
-	color: white;
-	background-color: $logo_color;
-	font-weight: 600;
-	font-size:18px;
-	border:1px solid $logo_color;
-	cursor: pointer; 
-	border-radius: 5px;
-	width:130px;
-	margin:0 auto;
-	margin-top:5px;
+  margin: 5px;
+  color: white;
+  background-color: $logo_color;
+  font-weight: 600;
+  font-size:18px;
+  border:1px solid $logo_color;
+  cursor: pointer; 
+  border-radius: 5px;
+  width:130px;
+  margin:0 auto;
+  margin-top:5px;
 }
 footer{
-	p{
-		color: white;
-		text-align: center;
-		display: block;
-		width: auto;
-		padding: 0 0 30px 0;
-		margin:0;	
-	}
+  p{
+    color: white;
+    text-align: center;
+    display: block;
+    width: auto;
+    padding: 0 0 30px 0;
+    margin:0; 
+  }
 }
 
 /*Dispositivos mobiles*/
 @media screen and (max-device-width: 500px){
-	
-	nav{
-		ul  {
-			-webkit-padding-start: 0;
-		}
-		li {
-			padding-right: 10px;
-		}	
-	}
-	.start {
-		display: none;
-		justify-content: flex-start;
-		padding-left: 10px;
-	}
-	form input, textarea, button{
-	width:280px;
-	box-sizing: border-box;
-	}
+  
+  nav{
+    ul  {
+      -webkit-padding-start: 0;
+    }
+    li {
+      padding-right: 10px;
+    } 
+  }
+  .start {
+    display: none;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+  form input, textarea, button{
+  width:280px;
+  box-sizing: border-box;
+  }
 }
 
